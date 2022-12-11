@@ -23,7 +23,7 @@ HTML and CSS. Professional web site makeup
 
 ##**MY PROJECTS**
 
-[https://sinichka22.github.io/my_projects/Sedona/](адрес "My projects Sedona")
+[My projects Sedona](https://sinichka22.github.io/my_projects/Sedona/)
 
 
 ##**WORK EXPERIENCE**
