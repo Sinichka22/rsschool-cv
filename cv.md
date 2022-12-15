@@ -1,4 +1,4 @@
-![avatar](img/foto.jpg "avatar")
+![avatar](assets/img/foto.jpg "avatar")
 
 #**ALIAKSANDRA SINITSYNA**
 
