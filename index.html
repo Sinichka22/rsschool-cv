@@ -6,12 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <title>CV</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section profile" id="profile">
+                <img src="./assets/img/foto.jpg" class="logo" alt="avatar">
+                <div class="profile-title">
+                    <h1 class="section-title main-title">Aliaksandra Sinitsyna</h1>
+                    <h3 class="section-subtitle">Junior HTML Developer</h3>
+                </div>
+            </section>
+            <section class="section contacts" id="contacts">
+                <h2 class="section-title">contacts</h2>
+                <ul class="section-list">
+                    <li class="section-item contacts-item">
+                        Email:
+                        <a href="mailto:a.sinitsyna07@gmail.com" title="email">a.sinitsyna07@gmail.com</a>
+                    </li>
+                    <li class="section-item contacts-item">
+                        Github:
+                        <a href="https://github.com/Sinichka22" title="github">Sinichka22</a>
+                    </li>
+                </ul>         
+            </section>
+            <section class="section summary" id="summary">
+                <h2 class="section-title">summary</h2>
+                <p class="section-text summary-text">
+                    There is a great desire to realize myself in a new profession at a high level, to gain experience in order to move further and higher.
+                </p>
+            </section>
+            <section class="section skills" id="skills">
+                <h2 class="section-title">skills</h2>
+                <ul class="section-list">
+                    <li class="section-item skills-item">
+                        html
+                    </li>
+                    <li class="section-item skills-item">
+                        css
+                    </li>
+                    <li class="section-item skills-item">
+                        git
+                    </li>
+                    <li class="section-item skills-item">
+                        figma
+                    </li>
+                </ul>
+            </section>
+            <section class="section code" id="code">
+                <h2 class="section-title">code</h2>
+                <pre class="pre-code">
+                    <code class="code-text">
+                        function factorial(n) {
+                            if(n < 0) return null;
+                            if (n <= 1) return 1;
+                            return n * factorial(n-1);
+                        }
+                    </code>
+                </pre>
+            </section>
+            <section class="section courses" id="courses">
+                <h2 class="section-title">courses</h2>
+                <p class="section-text">
+                    HTMLAcademy June-July 2022 HTML and CSS. Professional web site makeup
+                </p>
+            </section>
+            <section class="section projects" id="projects">
+                <h2 class="section-title">projects</h2>
+                <ul class="section-list">
+                    <li class="section-item projects-item">
+                        <a href="https://sinichka22.github.io/my_projects/Sedona/" class="sedona"> My projects Sedona</a>
+                    </li>
+                    <li class="section-item projects-item">
+                        
+                    </li>
+                </ul>
+            </section>
+            <section class="section educatio" id="educatio">
+                <h2 class="section-title">educatio</h2>
+                <p class="section-text">
+                    Polotsk State University
+                </p>
+            </section>
+            <section class="section english" id="english">
+                <h2 class="section-title">english</h2>
+                <p class="section-text">
+                    English language level A2 in the learning process
+                </p>
+            </section>           
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div></div>
+            <a href="https://rs.school/js-stage0/" class="rs-logo"></a>
+        </div>
+    </footer>
 </body>
 </html>
