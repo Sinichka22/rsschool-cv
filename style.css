@@ -1,0 +1,246 @@
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url("assets/fonts/Ubuntu-Regular.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url("assets/fonts/Ubuntu-Bold.ttf");
+    font-weight: 700;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: rgb(32, 32, 32);
+    font-weight: 400;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  ul, li {
+    padding: 0;
+    margin: 0;
+  }
+
+  .pre-code {
+    padding: 0;
+    margin: 0;
+    line-height: 1.45; 
+    background-color: #f6f8fa;
+    border-radius: 10px;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section {
+    width: calc(50% - 20px);
+    padding: 0px 20px 20px 20px;
+    border-bottom: 3px solid #d7d1c9;
+  }
+
+  .section-title {
+    color: #5c5c5c;
+  }
+
+  .header {
+    background-color: #998c80;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav-link {
+    position: relative;
+    padding: 0 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.5s;
+  }
+
+  .nav-link:hover::after {
+    opacity: 1;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -5px;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+    transition: .5s;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 15px solid #d7d1c9;
+  }
+
+ .profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .main-title {
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #5c5c5c;
+  }
+
+  .main-title::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 2px;
+    background-color: #998c80;
+  }
+
+  .section-subtitle {
+    margin-top: 20px;
+    color: #5c5c5c;
+    line-height: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .logo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
+  }
+
+  .section-item a {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-weight: 400;
+    transition: .5s;
+  }
+
+  .section-item a:hover {
+    color: #481f8f;
+  }
+
+  .section-item {
+    position: relative;
+    padding-left: 30px;
+    list-style-type:none;
+  }
+  
+  .section-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #829985;
+    border-radius: 50%;
+  }
+
+  .skills-item {
+    text-transform: uppercase;
+  }
+
+  .footer {
+    background-color: #998c80;
+    padding: 10px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+  .rs-logo {
+    width: 100px;
+    height: 45px;
+    background-image: url('./assets/svg/rss.svg');
+    fill: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .my-github {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 40px;
+  }
+  .my-github::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -32px;
+    background-image: url('./assets/img/GIT-icon.png');
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+  .section#education, .section#languages {
+    border-bottom: none;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+    .section#education {
+      border-bottom: 3px solid #d7d1c9;
+    }
+  }
