@@ -37,6 +37,9 @@
   .pre-code {
     padding: 0;
     margin: 0;
+    line-height: 1.45; 
+    background-color: #f6f8fa;
+    border-radius: 10px;
   }
 
   .container {
@@ -53,6 +56,10 @@
     width: 50%;
     padding-left: 20px;
   }
+
+  .section.languages {
+    margin-bottom: 20px;
+}
 
   .section-title {
     color: #5c5c5c;
@@ -101,11 +108,11 @@
   .profile {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
     padding: 50px 30px 35px;
     border-bottom: 15px solid #d7d1c9;
   }
-
 
  .profile-title {
     display: flex;
@@ -145,7 +152,7 @@
   }
 
   .logo {
-    width: 218px;
+    width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
@@ -154,19 +161,14 @@
 
   .section-item a {
     text-decoration: none;
-    color: #3f51b5;
+    color: rgb(32, 32, 32);
     font-weight: 400;
     transition: .5s;
   }
 
   .section-item a:hover {
-    color: #673ab7;
+    color: #481f8f;
   }
-
-
-
-
-
 
   .section-item {
     position: relative;
@@ -211,13 +213,30 @@
     background-repeat: no-repeat;
   }
 
-
-
+  .my-github {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 40px;
+  }
+  .my-github::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -32px;
+    background-image: url('./assets/img/GIT-icon.png');
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
   @media (max-width: 768px) {
     .section {
       width: 100%;
     }
   }
+
 
   
